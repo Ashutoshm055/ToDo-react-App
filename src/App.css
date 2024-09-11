@@ -1,0 +1,157 @@
+/* General Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main Container */
+.App {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+/* Header */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Input Field */
+input[type="text"] {
+  width: calc(100% - 120px); /* Adjust width for responsiveness */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Add Task Button */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Task List */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual Task Items */
+li {
+  background-color: #f9f9f9;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #eef1f5;
+}
+
+/* Task Buttons (Complete, Delete) */
+li button {
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+li button:first-child {
+  background-color: #28a745;
+}
+
+li button:first-child:hover {
+  background-color: #218838;
+}
+
+li button:last-child {
+  background-color: #dc3545;
+}
+
+li button:last-child:hover {
+  background-color: #c82333;
+}
+
+/* Task Text Styling */
+li span {
+  font-size: 16px;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+li span.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* No Tasks Message */
+.no-tasks {
+  color: #888;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Stack input and button vertically on smaller screens */
+  .App {
+    padding: 20px;
+    width: 100%;
+  }
+
+  input[type="text"] {
+    width: calc(100% - 20px); /* Full width on small screens */
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%; /* Full width on small screens */
+    margin: 5px 0;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li button {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
