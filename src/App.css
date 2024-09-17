@@ -1,5 +1,7 @@
 /* General Body Styling */
 body {
+  background-image: url(./cat.jpg);
+  background-size: cover;
   font-family: 'Arial', sans-serif;
   background-color: #f4f7fa;
   margin: 0;
@@ -12,12 +14,13 @@ body {
 
 /* Main Container */
 .App {
-  background-color: #fff;
+  background-color: #ffffffa7;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 600px;
+  text-align: center;
   box-sizing: border-box;
 }
 
@@ -40,14 +43,14 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-  border-color: #007bff;
+  border-color: #00346b;
   outline: none;
 }
 
 /* Add Task Button */
 button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #00346b;
   color: white;
   border: none;
   border-radius: 5px;
@@ -71,7 +74,7 @@ ul {
 li {
   background-color: #f9f9f9;
   padding: 10px 20px;
-  margin-bottom: 10px;
+  margin: 10px;
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
